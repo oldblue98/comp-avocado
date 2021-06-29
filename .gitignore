@@ -1,7 +1,7 @@
 /data/*
 .vscode/*
 .ipynb_checkpoints/*
-scikit-learn/*
-features/feather/*
+/scikit-learn/*
+/features/feather/*
 .DS_Store
 notebook/*
