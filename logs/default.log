@@ -1,0 +1,678 @@
+2021-06-23 18:59:15,927: {'data_root': './data', 'base_models': {'_Lasso': {'alpha': 0.0}, 'LightGBM': {'metric': 'rmse', 'objective': 'regression', 'feature_pre_filter': 'False', 'lambda_l1': 3.08816008958636e-08, 'lambda_l2': 0, 'num_leaves': 2, 'feature_fraction': 0.92, 'bagging_fraction': 0.61, 'bagging_freq': 3, 'min_child_samples': 20, 'num_iterations': 2000, 'early_stopping_round': 100}}, 'model_arch': 'lgbm', 'fold_num': 5, 'seed': 6, 'target_name': 'AveragePrice', 'ID_name': 'Id', 'columns': ['Total Bags', 'Total Volume', 'year', 'Small Bags', 'Large Bags', 'XLarge Bags', '4225', '4046', '4770', 'type_conventional', 'type_organic', 'region_Philadelphia', 'region_SanDiego', 'region_Pittsburgh', 'region_Sacramento', 'region_Detroit', 'region_Midsouth', 'region_PhoenixTucson', 'region_Roanoke', 'region_California', 'region_SouthCarolina', 'region_Plains', 'region_Spokane', 'region_RaleighGreensboro', 'region_DallasFtWorth', 'region_GrandRapids', 'region_TotalUS', 'region_WestTexNewMexico', 'region_Orlando', 'region_Boston', 'region_Syracuse', 'region_Indianapolis', 'region_Chicago', 'region_NorthernNewEngland', 'region_StLouis', 'region_Nashville', 'region_Louisville', 'region_Denver', 'region_NewYork', 'region_Columbus', 'region_Atlanta', 'region_Jacksonville', 'region_Southeast', 'region_HarrisburgScranton', 'region_Boise', 'region_Northeast', 'region_LasVegas', 'region_West', 'region_Seattle', 'region_Tampa', 'region_HartfordSpringfield', 'region_LosAngeles', 'region_SouthCentral', 'region_BuffaloRochester', 'region_RichmondNorfolk', 'region_NewOrleansMobile', 'region_CincinnatiDayton', 'region_Albany', 'region_Houston', 'region_GreatLakes', 'region_Portland', 'region_BaltimoreWashington', 'region_Charlotte', 'region_MiamiFtLauderdale', 'region_SanFrancisco']}
+2021-06-23 18:59:25,053: Light GBM importance (gain)
+2021-06-23 18:59:25,053:                              importance
+type_conventional           1495.420185
+4046                         384.664562
+Total Bags                   348.925331
+Large Bags                   338.140335
+Total Volume                 107.906918
+region_SanFrancisco          102.827797
+4225                         100.193717
+region_HartfordSpringfield    86.933975
+region_NewYork                67.163604
+Small Bags                    55.009766
+4770                          52.578879
+region_Northeast              42.624577
+region_Houston                41.479813
+region_Philadelphia           40.458587
+region_DallasFtWorth          27.079928
+region_Louisville             24.303882
+region_Boise                  24.040058
+region_CincinnatiDayton       22.906662
+type_organic                  22.645700
+region_Roanoke                20.061352
+region_Plains                 16.758971
+region_Spokane                16.315619
+region_Nashville              16.181647
+region_BaltimoreWashington    15.786857
+region_RichmondNorfolk        15.541734
+region_TotalUS                15.091094
+region_Columbus               14.906420
+XLarge Bags                   12.860179
+region_California             12.787905
+region_HarrisburgScranton     11.321462
+region_Denver                 11.084350
+region_LosAngeles             10.408241
+region_Southeast              10.348391
+region_Charlotte              10.214074
+region_PhoenixTucson          10.192121
+region_Midsouth                9.035032
+region_Sacramento              7.673875
+region_NorthernNewEngland      6.493554
+region_SouthCentral            6.104121
+region_Chicago                 5.923902
+region_Indianapolis            5.552665
+region_Detroit                 5.451699
+region_WestTexNewMexico        5.229424
+region_Orlando                 5.028792
+region_GreatLakes              4.496908
+region_Boston                  4.042443
+region_NewOrleansMobile        3.872007
+year                           3.394874
+region_LasVegas                3.295364
+region_StLouis                 3.213679
+region_Pittsburgh              3.204324
+region_GrandRapids             3.172902
+region_West                    3.172828
+region_BuffaloRochester        3.067920
+region_SanDiego                2.956794
+region_Seattle                 2.821369
+region_Atlanta                 2.390390
+region_Portland                1.968129
+region_MiamiFtLauderdale       0.582859
+region_SouthCarolina           0.571317
+region_Albany                  0.192557
+region_Jacksonville            0.000000
+region_Syracuse                0.000000
+region_Tampa                   0.000000
+region_RaleighGreensboro       0.000000
+2021-06-23 18:59:25,086: Light GBM importance (split)
+2021-06-23 18:59:25,086:                             importance
+Total Volume                       324
+4225                               220
+Total Bags                         179
+Small Bags                         135
+4046                               134
+4770                                81
+region_SanFrancisco                 73
+Large Bags                          67
+XLarge Bags                         34
+region_Louisville                   33
+region_TotalUS                      32
+region_Columbus                     31
+region_Spokane                      29
+region_NewYork                      26
+region_Roanoke                      25
+region_Nashville                    25
+region_RichmondNorfolk              22
+region_Boise                        22
+region_HartfordSpringfield          22
+region_Northeast                    21
+region_California                   21
+region_Houston                      20
+region_NorthernNewEngland           20
+region_Philadelphia                 20
+region_HarrisburgScranton           19
+type_conventional                   17
+region_Detroit                      17
+region_BaltimoreWashington          17
+region_Southeast                    16
+region_Indianapolis                 16
+region_Chicago                      14
+year                                13
+region_WestTexNewMexico             13
+region_LosAngeles                   13
+region_Boston                       12
+region_West                         12
+region_Plains                       12
+region_Pittsburgh                   12
+region_LasVegas                     12
+region_CincinnatiDayton             11
+region_Denver                       11
+region_Sacramento                   11
+region_PhoenixTucson                11
+region_GrandRapids                  11
+region_StLouis                      10
+region_Atlanta                      10
+region_Seattle                       9
+region_BuffaloRochester              9
+region_DallasFtWorth                 9
+region_Orlando                       9
+region_Midsouth                      8
+region_SanDiego                      8
+region_Charlotte                     7
+region_NewOrleansMobile              7
+region_GreatLakes                    6
+region_SouthCentral                  6
+region_Portland                      5
+region_SouthCarolina                 3
+region_MiamiFtLauderdale             3
+type_organic                         1
+region_Albany                        1
+region_RaleighGreensboro             0
+region_Tampa                         0
+region_Syracuse                      0
+region_Jacksonville                  0
+2021-06-23 18:59:31,869: Light GBM importance (gain)
+2021-06-23 18:59:31,870:                              importance
+type_conventional           1542.725417
+Total Bags                   415.989445
+4046                         325.178848
+Large Bags                   312.123594
+Total Volume                 105.103870
+4225                          97.904709
+region_SanFrancisco           85.973090
+region_NewYork                71.606961
+region_HartfordSpringfield    63.256906
+4770                          57.600422
+Small Bags                    53.624207
+region_Northeast              49.871029
+region_Houston                44.128939
+region_Philadelphia           35.564304
+region_DallasFtWorth          29.021576
+region_Boise                  26.834658
+region_Louisville             25.056914
+region_CincinnatiDayton       22.643920
+region_Roanoke                20.113383
+region_Plains                 18.396193
+region_Spokane                16.719470
+region_Columbus               16.175677
+XLarge Bags                   15.930215
+region_TotalUS                15.879785
+region_Nashville              15.476446
+region_RichmondNorfolk        15.188721
+region_BaltimoreWashington    14.919460
+region_PhoenixTucson          13.109261
+region_LosAngeles             11.520715
+region_California             11.292057
+region_HarrisburgScranton     11.172317
+region_Denver                 10.293206
+region_Midsouth               10.072170
+region_Southeast               9.426134
+region_Indianapolis            8.154191
+region_Charlotte               7.107316
+region_SouthCentral            6.567876
+region_Chicago                 6.327228
+region_Orlando                 6.041808
+region_Detroit                 5.573178
+region_West                    4.929957
+region_Sacramento              4.703216
+region_Boston                  4.678438
+region_NorthernNewEngland      4.580884
+region_GreatLakes              4.557575
+region_GrandRapids             4.002660
+region_Pittsburgh              4.000962
+region_StLouis                 3.749533
+region_Seattle                 3.594816
+region_BuffaloRochester        3.112952
+region_NewOrleansMobile        2.710912
+year                           2.668242
+region_WestTexNewMexico        2.354490
+region_Atlanta                 1.570747
+region_Portland                1.510098
+region_MiamiFtLauderdale       1.336125
+region_LasVegas                1.298393
+region_SanDiego                0.986865
+region_SouthCarolina           0.966133
+type_organic                   0.284897
+region_Jacksonville            0.193278
+region_Syracuse                0.000000
+region_Albany                  0.000000
+region_Tampa                   0.000000
+region_RaleighGreensboro       0.000000
+2021-06-23 18:59:31,899: Light GBM importance (split)
+2021-06-23 18:59:31,899:                             importance
+Total Volume                       321
+4225                               216
+Total Bags                         188
+Small Bags                         142
+4046                               117
+Large Bags                          74
+4770                                72
+region_SanFrancisco                 50
+XLarge Bags                         38
+region_TotalUS                      36
+region_Louisville                   33
+region_Columbus                     30
+region_Spokane                      29
+region_NewYork                      26
+region_Roanoke                      26
+region_Northeast                    24
+region_Boise                        23
+region_Nashville                    23
+region_HartfordSpringfield          21
+region_Philadelphia                 21
+region_RichmondNorfolk              19
+type_conventional                   18
+region_California                   18
+region_Indianapolis                 18
+region_Houston                      17
+region_NorthernNewEngland           17
+region_HarrisburgScranton           17
+region_Chicago                      16
+region_Detroit                      16
+region_BaltimoreWashington          15
+region_LosAngeles                   15
+region_GrandRapids                  14
+region_Pittsburgh                   14
+region_Boston                       14
+region_Seattle                      14
+region_West                         14
+region_Southeast                    13
+region_PhoenixTucson                13
+region_Denver                       12
+region_Plains                       12
+region_CincinnatiDayton             12
+region_Orlando                      10
+region_Midsouth                     10
+region_Sacramento                   10
+year                                10
+region_BuffaloRochester             10
+region_DallasFtWorth                 9
+region_StLouis                       9
+region_GreatLakes                    7
+region_WestTexNewMexico              7
+region_Atlanta                       7
+region_NewOrleansMobile              6
+region_Charlotte                     6
+region_MiamiFtLauderdale             6
+region_SouthCentral                  5
+region_LasVegas                      5
+region_SanDiego                      4
+region_Portland                      4
+region_SouthCarolina                 4
+type_organic                         1
+region_Jacksonville                  1
+region_Tampa                         0
+region_Syracuse                      0
+region_Albany                        0
+region_RaleighGreensboro             0
+2021-06-23 18:59:38,280: Light GBM importance (gain)
+2021-06-23 18:59:38,281:                              importance
+type_conventional           1463.689485
+Total Bags                   360.474075
+4046                         299.955924
+Large Bags                   299.529751
+Total Volume                 237.921656
+region_SanFrancisco           86.174000
+4225                          85.705360
+region_NewYork                74.351926
+region_HartfordSpringfield    67.444310
+Small Bags                    51.720916
+4770                          48.899478
+region_Northeast              48.370940
+region_Houston                38.598869
+region_Philadelphia           34.214816
+region_DallasFtWorth          31.772257
+region_Boise                  25.673700
+region_Louisville             22.982199
+region_Roanoke                21.984012
+region_CincinnatiDayton       21.308790
+region_Plains                 16.466306
+region_BaltimoreWashington    16.211334
+region_TotalUS                16.190337
+region_RichmondNorfolk        16.044327
+region_Columbus               15.189003
+region_Nashville              14.954722
+XLarge Bags                   14.218160
+region_PhoenixTucson          14.116353
+region_Spokane                12.576136
+region_Denver                 11.187061
+region_Southeast              10.144641
+region_LosAngeles              9.877226
+region_Midsouth                9.515033
+region_HarrisburgScranton      8.295792
+region_California              8.226735
+region_Charlotte               8.125672
+region_Chicago                 8.018793
+region_SouthCentral            7.544888
+region_GreatLakes              6.356521
+region_Sacramento              5.936415
+region_West                    5.697301
+region_Indianapolis            5.691996
+region_NorthernNewEngland      5.555880
+region_Detroit                 5.114822
+region_NewOrleansMobile        4.799101
+region_Boston                  4.436216
+year                           4.020214
+region_Orlando                 3.983086
+region_GrandRapids             3.249069
+region_Pittsburgh              3.020093
+region_Seattle                 2.967100
+region_Portland                2.886228
+type_organic                   2.857120
+region_StLouis                 2.806279
+region_WestTexNewMexico        2.501214
+region_SanDiego                2.450409
+region_LasVegas                2.203188
+region_BuffaloRochester        1.914334
+region_Atlanta                 1.914177
+region_Albany                  0.744598
+region_MiamiFtLauderdale       0.609978
+region_SouthCarolina           0.354449
+region_RaleighGreensboro       0.000000
+region_Syracuse                0.000000
+region_Jacksonville            0.000000
+region_Tampa                   0.000000
+2021-06-23 18:59:38,305: Light GBM importance (split)
+2021-06-23 18:59:38,305:                             importance
+Total Volume                       323
+Total Bags                         211
+4225                               185
+Small Bags                         143
+4046                               135
+Large Bags                          81
+4770                                71
+region_SanFrancisco                 56
+region_TotalUS                      36
+XLarge Bags                         34
+region_Louisville                   32
+region_Columbus                     29
+region_NewYork                      28
+region_Spokane                      24
+region_HartfordSpringfield          24
+region_Northeast                    24
+region_Roanoke                      24
+region_Boise                        23
+region_Nashville                    23
+region_Philadelphia                 21
+region_Southeast                    19
+region_RichmondNorfolk              19
+region_NorthernNewEngland           18
+region_West                         18
+region_Chicago                      18
+region_California                   18
+region_Houston                      17
+region_PhoenixTucson                17
+region_HarrisburgScranton           17
+region_BaltimoreWashington          16
+region_Detroit                      16
+region_Boston                       15
+region_Indianapolis                 15
+region_LosAngeles                   15
+year                                14
+type_conventional                   14
+region_Plains                       13
+region_GrandRapids                  12
+region_Pittsburgh                   11
+region_Sacramento                   11
+region_Midsouth                     11
+region_CincinnatiDayton             10
+region_Denver                       10
+region_LasVegas                     10
+region_Seattle                      10
+region_Atlanta                       9
+region_StLouis                       9
+region_DallasFtWorth                 9
+region_GreatLakes                    9
+region_Orlando                       9
+region_NewOrleansMobile              9
+region_WestTexNewMexico              8
+region_SanDiego                      7
+region_Charlotte                     7
+region_BuffaloRochester              7
+region_Portland                      6
+region_SouthCentral                  5
+region_Albany                        3
+region_MiamiFtLauderdale             3
+type_organic                         2
+region_SouthCarolina                 2
+region_Syracuse                      0
+region_Jacksonville                  0
+region_Tampa                         0
+region_RaleighGreensboro             0
+2021-06-23 18:59:44,992: Light GBM importance (gain)
+2021-06-23 18:59:44,992:                              importance
+type_conventional           1494.839146
+Total Bags                   377.163156
+4046                         310.296232
+Large Bags                   292.131325
+Total Volume                 246.768084
+4225                          96.203705
+region_SanFrancisco           92.905403
+region_NewYork                72.541726
+region_HartfordSpringfield    71.003298
+4770                          51.210027
+region_Northeast              51.209163
+Small Bags                    49.439475
+region_Houston                39.314555
+region_Philadelphia           34.101422
+region_DallasFtWorth          29.363004
+region_Boise                  25.578378
+region_Louisville             25.186808
+region_CincinnatiDayton       23.378528
+region_Roanoke                22.971646
+region_Plains                 16.603530
+XLarge Bags                   15.807428
+region_RichmondNorfolk        15.755701
+region_TotalUS                14.760208
+region_California             13.371980
+region_Columbus               13.173766
+region_Nashville              12.750954
+region_Spokane                12.148516
+region_Southeast              11.865013
+region_HarrisburgScranton     11.606436
+region_BaltimoreWashington    11.096281
+region_LosAngeles              9.541592
+region_Denver                  9.032360
+region_Midsouth                8.917625
+region_Charlotte               8.701966
+region_PhoenixTucson           8.686661
+region_Indianapolis            7.423414
+region_SouthCentral            7.263243
+region_Chicago                 6.583728
+region_Detroit                 5.911827
+region_Sacramento              5.315770
+region_West                    4.953277
+region_Orlando                 4.889813
+region_GreatLakes              4.844598
+region_NewOrleansMobile        4.790797
+region_BuffaloRochester        4.736980
+region_NorthernNewEngland      4.468830
+region_Boston                  4.259939
+region_WestTexNewMexico        4.210811
+region_StLouis                 3.893456
+region_GrandRapids             3.706590
+region_SanDiego                3.368450
+region_Pittsburgh              3.178072
+year                           2.960033
+region_LasVegas                2.820687
+region_Atlanta                 2.233745
+region_Portland                2.131639
+region_Seattle                 1.574654
+region_MiamiFtLauderdale       1.018153
+region_Albany                  0.573747
+region_SouthCarolina           0.443831
+type_organic                   0.220772
+region_Jacksonville            0.174457
+region_Tampa                   0.000000
+region_Syracuse                0.000000
+region_RaleighGreensboro       0.000000
+2021-06-23 18:59:45,021: Light GBM importance (split)
+2021-06-23 18:59:45,023:                             importance
+Total Volume                       335
+4225                               209
+Total Bags                         195
+Small Bags                         130
+4046                               129
+Large Bags                          80
+4770                                79
+region_SanFrancisco                 67
+XLarge Bags                         42
+region_TotalUS                      35
+region_Louisville                   33
+region_Columbus                     30
+region_NewYork                      25
+region_Roanoke                      25
+region_Spokane                      24
+region_HartfordSpringfield          23
+region_Northeast                    23
+region_Nashville                    23
+region_Boise                        21
+region_Philadelphia                 21
+region_Indianapolis                 20
+region_RichmondNorfolk              20
+region_California                   18
+region_Chicago                      17
+region_HarrisburgScranton           17
+region_Detroit                      16
+type_conventional                   16
+region_NorthernNewEngland           16
+region_Houston                      15
+region_BuffaloRochester             15
+region_Southeast                    15
+region_West                         14
+region_LosAngeles                   14
+region_GrandRapids                  13
+region_Boston                       13
+region_BaltimoreWashington          13
+region_Plains                       12
+region_CincinnatiDayton             11
+region_StLouis                      11
+region_LasVegas                     11
+region_Sacramento                   10
+region_Pittsburgh                   10
+region_Atlanta                      10
+region_DallasFtWorth                10
+year                                10
+region_PhoenixTucson                10
+region_Midsouth                      9
+region_WestTexNewMexico              9
+region_NewOrleansMobile              9
+region_Orlando                       9
+region_Denver                        8
+region_SanDiego                      8
+region_GreatLakes                    7
+region_Seattle                       6
+region_Charlotte                     6
+region_Portland                      6
+region_SouthCentral                  5
+region_MiamiFtLauderdale             4
+region_SouthCarolina                 3
+region_Albany                        3
+type_organic                         1
+region_Jacksonville                  1
+region_RaleighGreensboro             0
+region_Tampa                         0
+region_Syracuse                      0
+2021-06-23 18:59:51,034: Light GBM importance (gain)
+2021-06-23 18:59:51,035:                              importance
+type_conventional           1535.258652
+Total Bags                   373.742278
+Large Bags                   361.028045
+4046                         315.581337
+Total Volume                 100.846077
+4225                          93.481351
+region_HartfordSpringfield    81.457152
+region_NewYork                73.989590
+region_SanFrancisco           65.702976
+region_Northeast              48.671094
+Small Bags                    44.920318
+4770                          42.367228
+region_Philadelphia           40.771853
+region_Houston                37.624518
+region_DallasFtWorth          33.225500
+region_Boise                  25.206736
+region_Roanoke                23.781353
+region_Louisville             23.330731
+region_CincinnatiDayton       20.759038
+XLarge Bags                   16.651808
+region_RichmondNorfolk        16.487127
+region_Columbus               15.858661
+region_Nashville              15.521454
+region_Plains                 15.293276
+region_TotalUS                15.132595
+region_Spokane                14.655381
+region_BaltimoreWashington    12.646485
+region_Denver                 11.140221
+region_Charlotte              10.682421
+region_Southeast              10.451249
+region_California             10.441959
+region_LosAngeles              9.963372
+region_PhoenixTucson           9.743022
+region_HarrisburgScranton      9.520549
+region_Midsouth                9.102088
+region_Indianapolis            8.020723
+region_Detroit                 6.364988
+region_Chicago                 6.211729
+region_SouthCentral            5.469806
+region_Boston                  5.000232
+region_West                    4.529012
+region_NewOrleansMobile        4.289376
+region_Portland                4.216227
+region_WestTexNewMexico        4.135872
+region_Orlando                 4.099760
+region_GreatLakes              3.912947
+region_NorthernNewEngland      3.449876
+region_Sacramento              3.376996
+region_Seattle                 3.229186
+region_GrandRapids             2.867571
+year                           2.853845
+region_StLouis                 2.756220
+region_Pittsburgh              2.517214
+region_SanDiego                2.370522
+region_BuffaloRochester        2.268298
+region_LasVegas                1.863154
+region_MiamiFtLauderdale       1.427678
+region_Atlanta                 0.592508
+region_Albany                  0.494053
+region_Tampa                   0.424325
+region_RaleighGreensboro       0.311412
+type_organic                   0.000000
+region_SouthCarolina           0.000000
+region_Syracuse                0.000000
+region_Jacksonville            0.000000
+2021-06-23 18:59:51,064: Light GBM importance (split)
+2021-06-23 18:59:51,066:                             importance
+Total Volume                       285
+4225                               183
+Total Bags                         162
+4046                               121
+Small Bags                         112
+Large Bags                          62
+4770                                53
+region_SanFrancisco                 52
+XLarge Bags                         33
+region_TotalUS                      31
+region_Louisville                   27
+region_Columbus                     26
+region_Roanoke                      24
+region_Philadelphia                 23
+region_Boise                        23
+region_Nashville                    23
+region_Spokane                      23
+region_HartfordSpringfield          22
+region_NewYork                      22
+region_RichmondNorfolk              20
+region_Northeast                    20
+region_Indianapolis                 18
+region_HarrisburgScranton           17
+region_California                   16
+region_Detroit                      14
+region_Chicago                      14
+region_Southeast                    13
+type_conventional                   13
+region_BaltimoreWashington          13
+region_Boston                       13
+region_NorthernNewEngland           13
+region_West                         13
+region_Denver                       13
+region_CincinnatiDayton             12
+region_Plains                       12
+region_LosAngeles                   12
+region_PhoenixTucson                12
+region_Houston                      11
+region_WestTexNewMexico             10
+region_Seattle                      10
+region_Midsouth                      9
+region_DallasFtWorth                 9
+region_Orlando                       9
+region_GrandRapids                   9
+region_Pittsburgh                    9
+region_StLouis                       8
+region_BuffaloRochester              8
+year                                 8
+region_Sacramento                    8
+region_NewOrleansMobile              7
+region_Charlotte                     7
+region_Portland                      7
+region_LasVegas                      6
+region_SanDiego                      6
+region_MiamiFtLauderdale             5
+region_GreatLakes                    5
+region_SouthCentral                  4
+region_Atlanta                       3
+region_Tampa                         2
+region_Albany                        2
+region_RaleighGreensboro             1
+region_Syracuse                      0
+region_Jacksonville                  0
+region_SouthCarolina                 0
+type_organic                         0
+2021-06-23 18:59:51,144: ===CV scores===
+2021-06-23 18:59:51,144: model name : LightGBM
+2021-06-23 18:59:51,145: rmse score : 0.19009
+2021-06-23 18:59:51,151: ===CV scores===
+2021-06-23 18:59:51,152: model name : mean
+2021-06-23 18:59:51,154: rmse score : 0.19009
+2021-06-23 21:07:17,723: {'data_root': './data', 'base_models': {'_Lasso': {'alpha': 0.0}, 'LightGBM': {'metric': 'rmse', 'objective': 'regression', 'feature_pre_filter': 'False', 'lambda_l1': 3.08816008958636e-08, 'lambda_l2': 0, 'num_leaves': 2, 'feature_fraction': 0.92, 'bagging_fraction': 0.61, 'bagging_freq': 3, 'min_child_samples': 20, 'num_iterations': 2000, 'early_stopping_round': 100}}, 'model_arch': 'lgbm', 'fold_num': 5, 'seed': 6, 'target_name': 'AveragePrice', 'ID_name': 'Id', 'columns': ['Total Bags', 'Total Volume', 'year', 'Small Bags', 'Large Bags', 'XLarge Bags', '4225', '4046', '4770', 'type_conventional', 'type_organic', 'region_Philadelphia', 'region_SanDiego', 'region_Pittsburgh', 'region_Sacramento', 'region_Detroit', 'region_Midsouth', 'region_PhoenixTucson', 'region_Roanoke', 'region_California', 'region_SouthCarolina', 'region_Plains', 'region_Spokane', 'region_RaleighGreensboro', 'region_DallasFtWorth', 'region_GrandRapids', 'region_TotalUS', 'region_WestTexNewMexico', 'region_Orlando', 'region_Boston', 'region_Syracuse', 'region_Indianapolis', 'region_Chicago', 'region_NorthernNewEngland', 'region_StLouis', 'region_Nashville', 'region_Louisville', 'region_Denver', 'region_NewYork', 'region_Columbus', 'region_Atlanta', 'region_Jacksonville', 'region_Southeast', 'region_HarrisburgScranton', 'region_Boise', 'region_Northeast', 'region_LasVegas', 'region_West', 'region_Seattle', 'region_Tampa', 'region_HartfordSpringfield', 'region_LosAngeles', 'region_SouthCentral', 'region_BuffaloRochester', 'region_RichmondNorfolk', 'region_NewOrleansMobile', 'region_CincinnatiDayton', 'region_Albany', 'region_Houston', 'region_GreatLakes', 'region_Portland', 'region_BaltimoreWashington', 'region_Charlotte', 'region_MiamiFtLauderdale', 'region_SanFrancisco']}
